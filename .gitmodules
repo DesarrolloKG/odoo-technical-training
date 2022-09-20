@@ -1,0 +1,4 @@
+[submodule "DesarrolloKG/odoo-technical-training"]
+	path = DesarrolloKG/odoo-technical-training
+	url = git@github.com:DesarrolloKG/odoo-technical-training.git
+	branch = main
