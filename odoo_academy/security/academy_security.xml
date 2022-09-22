@@ -3,7 +3,7 @@
     <record id="group_academy_admin" model="res.groups">
         <field name="name">Academy / Admin</field>
     </record>
-    <record id="only_active_modofy" model="ir.rule">
+    <record id="only_active_modify" model="ir.rule">
         <field name="name">Only active course can be modified</field>
         <field name="perm_read" eval="0"/>
         <field name="perm_write" eval="1"/>
@@ -11,6 +11,5 @@
         <field name="perm_unlink" eval="1"/>
         <field name="domain_force">[('active', '=', True)]</field>
         <field name="model_id" ref="model_academy_course"/>
-
     </record>
 </odoo>
