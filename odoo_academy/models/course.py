@@ -8,7 +8,7 @@ class Course(models.Model):
     _name = 'academy.course'
     _description = 'Course info' 
 
-    name = fields.Char(string = 'Title', required = true)
+    name = fields.Char(string = 'Title', required = True)
     description = fields.Text(string = 'Description')
 
     level = fields.Selection(string = 'Leven', selection = [
@@ -18,4 +18,3 @@ class Course(models.Model):
     ], copy = False)
 
     active = fields.Boolean(string = 'Active', default = True)
-    

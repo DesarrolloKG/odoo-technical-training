@@ -26,7 +26,9 @@
     # always loaded
     'data': [],
     # only loaded in demonstration mode
-    'demo': [],
+    'demo': [
+        'demo/academy_demo.xml'
+    ],
     
     'license': 'GPL-2'
 }
