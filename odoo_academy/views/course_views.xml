@@ -49,6 +49,7 @@
                 <search>
                     <field name="name" />
                     <field name="description" />
+                    <field name="total_price" />
                 </search>
             </field>
         </record>
