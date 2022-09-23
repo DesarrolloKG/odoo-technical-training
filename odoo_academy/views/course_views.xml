@@ -38,7 +38,7 @@
                 </tree>
             </field>
         </record>
-        <record model="ir.ur.view" id="course_view_search">
+        <record model="ir.ui.view" id="course_view_search">
             <field name="name">academy.course.search</field>
             <field name="model">academy.course</field>
             <field name="arch" type="xml">
