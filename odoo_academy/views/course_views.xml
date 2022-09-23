@@ -50,6 +50,7 @@
                     <field name="name" />
                     <field name="description" />
                     <field name="total_price" />
+                    <field name="level" />
                 </search>
             </field>
         </record>
