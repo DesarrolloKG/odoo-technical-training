@@ -37,6 +37,7 @@
                 <tree string="Course list">
                     <field name="name" />
                     <field name="description" />
+                    <field name="total_price" />
                     <field name="level" />
                 </tree>
             </field>
