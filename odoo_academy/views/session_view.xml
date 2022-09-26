@@ -18,12 +18,12 @@
                                 <field name="instructor_id" />
                             </group>
                         </group>
+                        <notebook>
+                            <page string="Students">
+                                <field name="student_ids" />
+                            </page>
+                        </notebook>
                     </sheet>
-                    <notebook>
-                        <page string="Students">
-                            <field name="student_ids" />
-                        </page>
-                    </notebook>
                 </form>
             </field>
         </record>
