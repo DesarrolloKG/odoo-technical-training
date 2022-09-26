@@ -11,7 +11,7 @@
                 </p>
             </field>
         </record>
-        <record model="ir.activons.act_window" id="session_list_action">
+        <record model="ir.actions.act_window" id="session_list_action">
             <field name="name">Sessions</field>
             <field name="res_model">academy.session</field>
             <field name="view_mode">tree,form</field>
