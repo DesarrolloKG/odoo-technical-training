@@ -17,11 +17,11 @@
                             <group>
                                 <field name="instructor_id" />
                             </group>
-                            <noteboo>
+                            <notebook>
                                 <page string="Students">
                                     <field name="student_ids" />
                                 </page>
-                            </noteboo>
+                            </notebook>
                         </group>
                     </sheet>
                 </form>
