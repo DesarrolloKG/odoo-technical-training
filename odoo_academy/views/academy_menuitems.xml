@@ -28,6 +28,6 @@
                   parent="menu_academy_sub" 
                   sequence="3" 
                   action="course_list_action"/>
-        <menuitem id="menu_academy_sessions" name="Sessions" parent="menu_academy_sub" suquence="4" action="session_list_action"/>
+        <menuitem name="Sessions" id="menu_academy_sessions" parent="menu_academy_sub" sequence="4" action="session_list_action"/>
     </data>
 </odoo>
