@@ -47,10 +47,10 @@
             <field name="name">academy.session.calendar</field>
             <field name="model">academy.session</field>
             <field name="arch" type="xml">
-                <calendae string="Session Calendar" date_start="start_date" color="instructor_id" model="month">
+                <calendar string="Session Calendar" date_start="start_date" color="instructor_id" model="month">
                     <field name="name" />
                     <field name="instructor_id" />
-                </calendae>
+                </calendar>
             </field>
         </record>
     </data>
