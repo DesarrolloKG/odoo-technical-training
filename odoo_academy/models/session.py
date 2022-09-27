@@ -22,7 +22,7 @@ class Session(models.Model):
                 record.end_date = record.start_date
             else:
                 duration = timedelta(days=record.duration)
-                record.end_date = record.start_data + duration
+                record.end_date = record.start_date + duration
 
     def _inverse_end_date(self):
         for record in self:
