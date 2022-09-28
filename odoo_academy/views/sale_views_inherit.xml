@@ -6,7 +6,7 @@
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order" />
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='payment_term_id']" position="afert">
+                <xpath expr="//field[@name='payment_term_id']" position="after">
                     <field name="session_id" />
                 </xpath>
                 <field name="partner_id" position="before">
