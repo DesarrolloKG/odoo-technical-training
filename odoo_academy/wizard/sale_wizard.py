@@ -14,7 +14,7 @@ class SaleWizard(models.TransientModel):
     student_ids = fields.Many2many(comodel_name="res.partner", string="Student for sales order")
 
     def create_sale_orders(self):
-        session_product_id = self.env['product.product'].search([('is_session_product', '=', Ture)], limit=1)
+        session_product_id = self.env['product.product'].search([('is_session_product', '=', True)], limit=1)
         if session_product_id:
             for student in self.student_ids:
                 order_id = self.env['sale.order'].create({
