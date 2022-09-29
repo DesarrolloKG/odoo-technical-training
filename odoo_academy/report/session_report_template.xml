@@ -34,7 +34,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <t t-foreach="doc.students_ids" t-as="student">
+                            <t t-foreach="doc.student_ids" t-as="student">
                                 <tr>
                                     <td t-if="student.name" nam="td_name">
                                         <span t-field="student.name"></span>
