@@ -19,5 +19,8 @@ print(model_access)
 courses = models.execute_kw(db, uid, password, 'academy.course', 'search_read', [[['level', 'in', ['intermediate', 'beginner']]]])
 print(courses)
 
-course = models.execute_kw(db, uid, password, 'academy.course', 'search', [[['name', '=', 'Accounting 200']]])
+course = models.execute_kw(db, uid, password, 'academy.course', 'search', [[['name', '=', 'Contabilidad 200']]])
 print(course)
+
+session_fields = models.execute_kw(db, uid, password, 'academy.session', 'fields_get', [], {'attributes': ['string', 'type', 'required']})
+print(session_fields)
