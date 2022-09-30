@@ -17,3 +17,4 @@ model_access = models.execute_kw(db, uid, password, 'academy.session', 'check_ac
 print(model_access)
 
 courses = models.execute_kw(db, uid, password, 'academy.course', 'search_read', [[['level', 'in', ['intermediate', 'beginner']]]])
+print(courses)
