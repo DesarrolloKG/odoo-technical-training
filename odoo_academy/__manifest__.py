@@ -21,7 +21,10 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['sale_management'],
+    'depends': [
+        'sale_management',
+        'website'
+    ],
 
     # always loaded
     'data': [
@@ -33,7 +36,8 @@
         'views/sale_views_inherit.xml',
         'views/product_views.xml',
         'wizard/sale_wizard_view.xml',
-        'report/session_report_template.xml'
+        'report/session_report_template.xml',
+        'views/academy_web_template.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
