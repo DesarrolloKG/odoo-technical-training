@@ -18,3 +18,6 @@ print(model_access)
 
 courses = models.execute_kw(db, uid, password, 'academy.course', 'search_read', [[['level', 'in', ['intermediate', 'beginner']]]])
 print(courses)
+
+course = models.execute_kw(db, uid, password, 'academy.course', 'search', [[['name', '=', 'Accounting 200']]])
+print(course)
