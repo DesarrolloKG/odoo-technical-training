@@ -11,7 +11,7 @@ print(common.version())
 uid = common.authenticate(db, username, password, {})
 print(uid)
 
-models = client.ServerProxy("{}/xmlrpc/2/object".form(url))
+models = client.ServerProxy("{}/xmlrpc/2/object".format(url))
 
 model_access = models.execute_kw(db, uid, password, 'sale.order', 'check_access_right', ['write'], {'raise_exception': False})
 print(model_access)
