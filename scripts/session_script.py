@@ -24,3 +24,10 @@ print(course)
 
 session_fields = models.execute_kw(db, uid, password, 'academy.session', 'fields_get', [], {'attributes': ['string', 'type', 'required']})
 print(session_fields)
+
+new_session = models.execute_kw(db, uid, password, 'academy.session', 'create', [{
+    'course_id': course[0],
+    'state': 'open',
+    'duration': ''
+}])
+print(new_session)
