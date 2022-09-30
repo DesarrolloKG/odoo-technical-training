@@ -21,9 +21,7 @@
                                 Level:
                                 <span t-field="course.level" />
                             </p>
-                            <strong>
-                                Sessions
-                            </strong>
+                            <strong>Sessions</strong>
                             <t t-foreach="course.session_ids" t-as="session">
                                 <p>
                                     <a t-attf-href="/academy/{{ slug(session) }}">
