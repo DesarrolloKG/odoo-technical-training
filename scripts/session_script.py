@@ -15,3 +15,5 @@ models = client.ServerProxy("{}/xmlrpc/2/object".format(url))
 
 model_access = models.execute_kw(db, uid, password, 'academy.session', 'check_access_rights', ['write'], {'raise_exception': False})
 print(model_access)
+
+courses = models.execute.kw(db, uid, password, 'academy.course', 'search_read', [[['level', 'in', ['intermediate', 'beginner']]]])
