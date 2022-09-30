@@ -27,7 +27,6 @@ print(session_fields)
 
 new_session = models.execute_kw(db, uid, password, 'academy.session', 'create', [{
     'course_id': course[0],
-    'state': 'open',
     'duration': 5
 }])
 print(new_session)
