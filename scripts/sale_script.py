@@ -13,5 +13,5 @@ print(uid)
 
 models = client.ServerProxy("{}/xmlrpc/2/object".format(url))
 
-model_access = models.execute_kw(db, uid, password, 'sale.order', 'check_access_right', ['write'], {'raise_exception': False})
+model_access = models.execute_kw(db, uid, password, 'sale.order', 'check_access_rights', ['write'], {'raise_exception': False})
 print(model_access)
