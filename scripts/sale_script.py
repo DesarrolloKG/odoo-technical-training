@@ -18,3 +18,6 @@ print(model_access)
 
 draft_quotes = models.execute_kw(db, uid, password, 'sale.order', 'search', [[['state', '=', 'draft']]])
 print(draft_quotes)
+
+if_confirmed = models.execute_kw(db, uid, password, 'sale.order', 'action_confirm', [draft_quotes])
+print(if_confirmed)
