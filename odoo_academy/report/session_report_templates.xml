@@ -7,7 +7,7 @@
             name="odoo_academy.report_session_document"
             file="odoo_academy.report_session"
             report_type="qweb-html"/>-->
-    <record id="report_session" model="ir.action.report">
+    <record id="report_session" model="ir.actions.report">
         <field name="name">Sessions</field>
         <field name="model">academy.session</field>
         <field name="report_type">qweb-html</field>
